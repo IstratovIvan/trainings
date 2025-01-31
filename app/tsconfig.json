@@ -1,0 +1,17 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "strict": true,
+        "paths": {
+            "@/*": ["./*"]
+        },
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "esnext",
+        "lib": ["esnext", "dom"],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "preserve"
+    },
+    "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}
